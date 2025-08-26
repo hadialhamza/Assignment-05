@@ -44,9 +44,11 @@
     </style>
   </head>
   <body class="font-inter">
-    <header class="container mx-auto w-[98%]">
+    <header>
       <!-- Nav bar  -->
-      <nav class="py-5 flex justify-between items-center">
+      <nav
+        class="container mx-auto w-[90%] md:w-[98%] my-5 flex flex-col text-center md:flex-row md:text-left justify-between items-center gap-3"
+      >
         <!-- Left side image and title -->
         <div class="flex justify-center items-center gap-3">
           <img src="assets/logo.png" alt="" class="w-[50px]" />
@@ -59,23 +61,40 @@
         <!-- Right side Counters  -->
         <div class="flex items-center justify-center gap-5">
           <div
-            class="py-3 px-8 bg-[#41ff6b1a] rounded-[50px] flex items-center text-base font-black gap-3"
+            class="py-2 px-5 md:py-3 md:px-8 bg-[#41ff6b1a] rounded-[50px] flex items-center text-base font-black gap-3"
           >
             <span>0</span>
             <img src="assets/heart.png" alt="" class="w-[30px]" />
           </div>
           <div
-            class="py-3 px-8 bg-[#41ff6b1a] rounded-[50px] flex items-center text-base font-black gap-3"
+            class="py-2 px-5 md:py-3 md:px-8 bg-[#41ff6b1a] rounded-[50px] flex items-center text-base font-black gap-3"
           >
-            <span>100</span> <img src="assets/coin.png" alt="" class="w-6" />
+            <span>100</span>
+            <img src="assets/coin.png" alt="" class="w-[30px]" />
           </div>
           <div
-            class="py-3 px-9 bg-[#00A63E] rounded-[50px] text-white text-base font-semibold"
+            class="py-2 px-5 md:py-3 md:px-9 bg-[#00A63E] rounded-[50px] text-white text-base font-semibold"
           >
             <span>2</span> Copy
           </div>
         </div>
       </nav>
+
+      <!-- Hero section -->
+      <section class="bg-[linear-gradient(90deg,#013223,#006747,#013223)]">
+        <div
+          class="container mx-auto w-[90%] md:w-full text-white font-hind-madurai text-center py-5 space-y-3"
+        >
+          <img src="assets/logo-dark.png" alt="" class="w-[92px] mx-auto" />
+          <h1 class="text-3xl md:text-[40px] font-bold">
+            Emergency Service Directory
+          </h1>
+          <p class="text-base md:text-[20px] font-semibold">
+            Government Emergency Services at Your Fingertip – A Project by
+            Government of the People’s Republic of Bangladesh
+          </p>
+        </div>
+      </section>
     </header>
     <!-- Script file  -->
     <script src="script.js"></script>
