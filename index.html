@@ -48,7 +48,7 @@
 
     <nav class="sticky top-0 backdrop-blur-lg bg-[#ffffff8e] py-4 shadow-md">
       <div
-        class="container mx-auto w-[90%] flex flex-col text-center md:flex-row md:text-left justify-between items-center gap-3"
+        class="container mx-auto w-[95%] flex flex-col text-center md:flex-row md:text-left justify-between items-center gap-3"
       >
         <!-- Left side image and title -->
         <div class="flex justify-center items-center gap-3">
@@ -59,21 +59,21 @@
         <!-- Right side Counters  -->
         <div class="flex items-center justify-center gap-5">
           <div
-            class="py-1 px-5 md:px-8 bg-[#41ff6b1a] rounded-[50px] flex items-center text-base font-black gap-3"
+            class="py-1 md:py-[10px] px-5 md:px-8 bg-[#41ff6b1a] rounded-[50px] flex items-center text-base font-black gap-3"
           >
             <span id="heart-counter">0</span>
             <img src="assets/heart.png" alt="" class="w-[30px]" />
           </div>
           <div
-            class="py-1 px-5 md:px-8 bg-[#41ff6b1a] rounded-[50px] flex items-center text-base font-black gap-3"
+            class="py-1 md:py-[10px] px-5 md:px-8 bg-[#41ff6b1a] rounded-[50px] flex items-center text-base font-black gap-3"
           >
             <span id="balance">100</span>
             <img src="assets/coin.png" alt="" class="w-[30px]" />
           </div>
           <div
-            class="py-2 px-5 md:py-3 md:px-9 bg-[#00A63E] rounded-[50px] text-white text-base font-semibold"
+            class="py-2 px-4 md:py-3 md:px-9 bg-[#00A63E] rounded-[50px] text-white text-base font-semibold"
           >
-            <span>0</span> Copy
+            <span id="copy-counter" class="mr-2">0</span>Copy
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@
         </button>
       </div>
       <section
-        class="container mx-auto w-[98%] grid grid-cols-1 md:grid-cols-12 gap-7"
+        class="container mx-auto w-[95%] grid grid-cols-1 md:grid-cols-12 gap-7"
       >
         <!-- Card section -->
         <section
@@ -155,7 +155,7 @@
             </div>
             <div class="flex justify-between items-center gap-3">
               <button
-                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out"
+                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
                 <i class="fa-regular fa-copy"></i>
                 <span>Copy</span>
@@ -202,7 +202,7 @@
             </div>
             <div class="flex justify-between items-center gap-3">
               <button
-                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out"
+                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
                 <i class="fa-regular fa-copy"></i>
                 <span>Copy</span>
@@ -249,7 +249,7 @@
             </div>
             <div class="flex justify-between items-center gap-3">
               <button
-                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out"
+                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
                 <i class="fa-regular fa-copy"></i>
                 <span>Copy</span>
@@ -296,7 +296,7 @@
             </div>
             <div class="flex justify-between items-center gap-3">
               <button
-                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out"
+                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
                 <i class="fa-regular fa-copy"></i>
                 <span>Copy</span>
@@ -343,7 +343,7 @@
             </div>
             <div class="flex justify-between items-center gap-3">
               <button
-                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out"
+                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
                 <i class="fa-regular fa-copy"></i>
                 <span>Copy</span>
@@ -390,7 +390,7 @@
             </div>
             <div class="flex justify-between items-center gap-3">
               <button
-                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out"
+                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
                 <i class="fa-regular fa-copy"></i>
                 <span>Copy</span>
@@ -437,7 +437,7 @@
             </div>
             <div class="flex justify-between items-center gap-3">
               <button
-                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out"
+                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
                 <i class="fa-regular fa-copy"></i>
                 <span>Copy</span>
@@ -482,7 +482,7 @@
             </div>
             <div class="flex justify-between items-center gap-3">
               <button
-                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out"
+                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
                 <i class="fa-regular fa-copy"></i>
                 <span>Copy</span>
@@ -529,7 +529,7 @@
             </div>
             <div class="flex justify-between items-center gap-3">
               <button
-                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out"
+                class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
                 <i class="fa-regular fa-copy"></i>
                 <span>Copy</span>
@@ -566,6 +566,94 @@
         </aside>
       </section>
     </main>
+
+    <!-- Modal Content -->
+
+    <!-- Modal 01 -->
+    <dialog id="calling_modal" class="modal">
+      <div
+        class="modal-box relative text-center flex flex-col items-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-white/20 shadow-2xl rounded-3xl p-8 backdrop-blur-xl animate-in fade-in zoom-in duration-300"
+      >
+        <div
+          class="w-20 h-20 flex items-center justify-center rounded-full bg-green-500/20 ring-4 ring-green-500/40 shadow-lg mb-4 animate-pulse"
+        >
+          <img src="assets/phone-call.gif" alt="" class="w-16 h-16" />
+        </div>
+
+        <p class="inline-block text-lg font-semibold text-white">
+          You are calling
+          <span
+            id="modalServiceName"
+            class="text-green-400 font-bold ml-1"
+          ></span>
+          <span
+            id="modalServiceNumber"
+            class="ml-1 px-3 py-1 rounded-lg bg-green-600/30 text-green-300 font-mono"
+          ></span>
+          <img
+            src="assets/icons8-menu-vertical-80.png"
+            alt=""
+            class="inline w-6 h-6 opacity-80"
+          />
+        </p>
+
+        <div class="modal-action mt-6">
+          <form method="dialog">
+            <button
+              class="btn px-6 py-2 rounded-xl font-semibold text-base text-black hover:text-white bg-red-400/80 hover:bg-red-600 shadow-md shadow-red-900/30 transition-all duration-300"
+            >
+              <i class="fa-solid fa-phone-slash fa-beat mr-2"></i>
+              End Call
+            </button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Modal 02 -->
+    <dialog id="calling_modal_2" class="modal">
+      <div
+        class="modal-box relative text-center flex flex-col items-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-white/20 shadow-2xl rounded-3xl p-8 backdrop-blur-xl animate-in fade-in zoom-in duration-300"
+      >
+        <div
+          class="w-20 h-20 flex items-center justify-center rounded-full bg-green-500/20 ring-4 ring-green-500/40 shadow-lg mb-4 animate-pulse"
+        >
+          <img src="assets/error (2).gif" alt="" class="w-16 h-16" />
+        </div>
+
+        <p class="inline-block text-lg font-semibold text-white">
+          You do not have enough coins to make a call!
+        </p>
+
+        <div class="modal-action mt-6">
+          <form method="dialog">
+            <button
+              class="btn px-6 py-2 rounded-xl font-semibold text-base text-black hover:text-white bg-red-400/80 hover:bg-red-600 shadow-md shadow-red-900/30 transition-all duration-300"
+            >
+              <i class="fa-regular fa-circle-xmark fa-beat mr-1"></i>
+              Close
+            </button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Toast Content -->
+    <div
+      id="toast"
+      class="hidden fixed top-[135px] md:top-3 left-1/2 -translate-x-1/2 transform transition-all duration-500 opacity-0 scale-95"
+    >
+      <div
+        class="flex items-center gap-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white text-base font-medium px-6 py-4 rounded-xl shadow-xl shadow-green-300/30 backdrop-blur-md border border-white/20"
+      >
+        <i class="fa-regular fa-circle-check text-2xl"></i>
+        <p class="text-lg">
+          Contact Number
+          <span id="toast-text" class="font-extrabold mr-1"></span> is copied.
+        </p>
+      </div>
+    </div>
+
     <!-- Script file  -->
     <script src="script.js"></script>
   </body>

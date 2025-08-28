@@ -15,6 +15,13 @@ for (const icon of heartIcons) {
     const heartCount = parseInt(getId("heart-counter").innerText);
     const newHeartCount = heartCount + 1;
     getId("heart-counter").innerText = newHeartCount;
+
+    const heart = icon.children[0];
+    heart.classList.remove("fa-regular");
+    heart.classList.add("fa-solid", "fa-bounce", "text-red-500");
+    setTimeout(() => {
+      heart.classList.remove("fa-bounce");
+    }, 1000);
   });
 }
 
@@ -25,19 +32,20 @@ for (const button of callButtons) {
     // Coin Validation
     const balance = parseInt(getId("balance").innerText);
     if (balance < 20) {
-      alert(
-        "❌ You do not have enough coins to make a call! You need minimum 20 coins to make a call."
-      );
+      calling_modal_2.showModal();
       return;
     }
 
     // Calling Functionality
     const serviceName = button.parentNode.parentNode.children[2].innerText;
     const serviceNumber = button.parentNode.parentNode.children[3].innerText;
-    alert(`📞 Calling ${serviceName} ${serviceNumber} ...`);
+    getId("modalServiceName").innerText = serviceName;
+    getId("modalServiceNumber").innerText = serviceNumber;
 
     const newBalance = balance - 20;
     getId("balance").innerText = newBalance;
+
+    calling_modal.showModal();
 
     // Calling History
     const currentTime = new Date().toLocaleTimeString();
@@ -67,7 +75,6 @@ historyClearBtn.addEventListener("click", function () {
 });
 
 // History and Contact number Button functionality for mobile device
-
 const contactNumberBtn = getId("contact-number-btn");
 const callHistoryBtn = getId("call-history-btn");
 contactNumberBtn.addEventListener("click", function () {
@@ -101,3 +108,37 @@ callHistoryBtn.addEventListener("click", function () {
     "border-[#d4d6d5]"
   );
 });
+
+// Copy contact number functionality
+const copyNumberBtn = getClass("copy-number-btn");
+let toastTimeout;
+
+for (const button of copyNumberBtn) {
+  button.addEventListener("click", function () {
+    const number = button.parentNode.parentNode.children[3].innerText;
+    navigator.clipboard.writeText(number);
+
+    // Copy counter functionality
+    const copyCount = parseInt(getId("copy-counter").innerText);
+    const newCopyCount = copyCount + 1;
+    getId("copy-counter").innerText = newCopyCount;
+
+    // Clear toast timeout
+    if (toastTimeout) {
+      clearTimeout(toastTimeout);
+    }
+    // Toast function
+    const toast = getId("toast");
+    const toastText = getId("toast-text");
+    toast.classList.remove("hidden", "opacity-0", "scale-95");
+    toast.classList.add("opacity-100", "scale-100");
+    toastText.innerText = ` ${number} `;
+
+    // Toast Timeout
+    toastTimeout = setTimeout(function () {
+      toast.classList.remove("opacity-100", "scale-100");
+      toast.classList.add("opacity-0", "scale-95");
+      setTimeout(() => toast.classList.add("hidden"), 500);
+    }, 2500);
+  });
+}
