@@ -65,3 +65,39 @@ historyClearBtn.addEventListener("click", function () {
   const callHistoryContainer = getId("call-history-container");
   callHistoryContainer.innerHTML = "";
 });
+
+// History and Contact number Button functionality for mobile device
+
+const contactNumberBtn = getId("contact-number-btn");
+const callHistoryBtn = getId("call-history-btn");
+contactNumberBtn.addEventListener("click", function () {
+  const contactNumberSection = getId("contact-number-section");
+  contactNumberSection.classList.remove("hidden");
+  const callHistorySection = getId("call-history-section");
+  callHistorySection.classList.add("hidden");
+  contactNumberBtn.classList.add("bg-[#00a63e]", "text-white");
+  contactNumberBtn.classList.remove("text-[#5c5c5c]", "bg-white");
+  callHistoryBtn.classList.remove("bg-[#00a63e]", "text-white");
+  callHistoryBtn.classList.add(
+    "text-[#5c5c5c]",
+    "bg-white",
+    "border",
+    "border-[#d4d6d5]"
+  );
+});
+
+callHistoryBtn.addEventListener("click", function () {
+  const contactNumberSection = getId("contact-number-section");
+  contactNumberSection.classList.add("hidden");
+  const callHistorySection = getId("call-history-section");
+  callHistorySection.classList.remove("hidden");
+  callHistoryBtn.classList.add("bg-[#00a63e]", "text-white");
+  callHistoryBtn.classList.remove("text-[#5c5c5c]", "bg-white");
+  contactNumberBtn.classList.remove("bg-[#00a63e]", "text-white");
+  contactNumberBtn.classList.add(
+    "text-[#5c5c5c]",
+    "bg-white",
+    "border",
+    "border-[#d4d6d5]"
+  );
+});
