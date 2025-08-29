@@ -45,7 +45,6 @@
   </head>
   <body class="font-inter">
     <!-- Nav bar  -->
-
     <nav class="sticky top-0 backdrop-blur-lg bg-[#ffffff8e] py-4 shadow-md">
       <div
         class="container mx-auto w-[95%] flex flex-col text-center md:flex-row md:text-left justify-between items-center gap-3"
@@ -78,6 +77,8 @@
         </div>
       </div>
     </nav>
+
+    <!-- Hero Section -->
     <header>
       <!-- Hero section -->
       <section class="bg-[linear-gradient(90deg,#013223,#006747,#013223)]">
@@ -113,6 +114,8 @@
           Call History
         </button>
       </div>
+
+      <!-- Card and history section -->
       <section
         class="container mx-auto w-[95%] grid grid-cols-1 md:grid-cols-12 gap-7"
       >
@@ -157,7 +160,7 @@
               <button
                 class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
-                <i class="fa-regular fa-copy"></i>
+                <i class="fa-solid fa-copy"></i>
                 <span>Copy</span>
               </button>
               <button
@@ -204,7 +207,7 @@
               <button
                 class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
-                <i class="fa-regular fa-copy"></i>
+                <i class="fa-solid fa-copy"></i>
                 <span>Copy</span>
               </button>
               <button
@@ -251,7 +254,7 @@
               <button
                 class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
-                <i class="fa-regular fa-copy"></i>
+                <i class="fa-solid fa-copy"></i>
                 <span>Copy</span>
               </button>
               <button
@@ -298,7 +301,7 @@
               <button
                 class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
-                <i class="fa-regular fa-copy"></i>
+                <i class="fa-solid fa-copy"></i>
                 <span>Copy</span>
               </button>
               <button
@@ -345,7 +348,7 @@
               <button
                 class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
-                <i class="fa-regular fa-copy"></i>
+                <i class="fa-solid fa-copy"></i>
                 <span>Copy</span>
               </button>
               <button
@@ -392,7 +395,7 @@
               <button
                 class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
-                <i class="fa-regular fa-copy"></i>
+                <i class="fa-solid fa-copy"></i>
                 <span>Copy</span>
               </button>
               <button
@@ -439,7 +442,7 @@
               <button
                 class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
-                <i class="fa-regular fa-copy"></i>
+                <i class="fa-solid fa-copy"></i>
                 <span>Copy</span>
               </button>
               <button
@@ -484,7 +487,7 @@
               <button
                 class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
-                <i class="fa-regular fa-copy"></i>
+                <i class="fa-solid fa-copy"></i>
                 <span>Copy</span>
               </button>
               <button
@@ -531,7 +534,7 @@
               <button
                 class="w-1/2 border border-[#d4d6d5] rounded-lg bg-white p-4 text-base font-normal text-[#5c5c5c] cursor-pointer hover:scale-103 active:scale-100 transition-all ease-in-out copy-number-btn"
               >
-                <i class="fa-regular fa-copy"></i>
+                <i class="fa-solid fa-copy"></i>
                 <span>Copy</span>
               </button>
               <button
@@ -561,7 +564,10 @@
                 Clear
               </button>
             </div>
-            <div id="call-history-container"></div>
+            <div
+              id="call-history-container"
+              class="flex flex-col-reverse mt-4"
+            ></div>
           </div>
         </aside>
       </section>
@@ -646,7 +652,7 @@
       <div
         class="flex items-center gap-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white text-base font-medium px-6 py-4 rounded-xl shadow-xl shadow-green-300/30 backdrop-blur-md border border-white/20"
       >
-        <i class="fa-regular fa-circle-check text-2xl"></i>
+        <i class="fa-regular fa-circle-check fa-beat text-2xl"></i>
         <p class="text-lg">
           Contact Number
           <span id="toast-text" class="font-extrabold mr-1"></span> is copied.

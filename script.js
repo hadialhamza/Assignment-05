@@ -67,6 +67,18 @@ for (const button of callButtons) {
   });
 }
 
+for (const button of callButtons) {
+  button.addEventListener("mouseenter", function () {
+    button.children[0].classList.add("fa-beat-fade");
+  });
+}
+
+for (const button of callButtons) {
+  button.addEventListener("mouseleave", function () {
+    button.children[0].classList.remove("fa-beat-fade");
+  });
+}
+
 // History Clear Button Functionality
 const historyClearBtn = getId("history-clear-btn");
 historyClearBtn.addEventListener("click", function () {
@@ -140,5 +152,15 @@ for (const button of copyNumberBtn) {
       toast.classList.add("opacity-0", "scale-95");
       setTimeout(() => toast.classList.add("hidden"), 500);
     }, 2500);
+  });
+}
+
+for (const button of copyNumberBtn) {
+  button.addEventListener("mouseenter", function () {
+    button.children[0].classList.add("fa-beat-fade");
+  });
+
+  button.addEventListener("mouseleave", function () {
+    button.children[0].classList.remove("fa-beat-fade");
   });
 }
