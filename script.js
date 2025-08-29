@@ -52,7 +52,7 @@ for (const button of callButtons) {
     const callHistoryContainer = getId("call-history-container");
     const newElement = document.createElement("div");
     newElement.innerHTML = `
-    <div class="bg-[#fafafa] p-4 my-3 flex justify-between items-center rounded-lg">
+    <div class="bg-[#fafafa] p-4 my-2 flex justify-between items-center rounded-lg">
          <div class="w-[65%]">
            <h2 class="font-inter font-semibold text-lg">${serviceName}</h2>
            <p class="font-hind-madurai text-lg text-[#5c5c5c]">${serviceNumber}</p>
@@ -67,6 +67,7 @@ for (const button of callButtons) {
   });
 }
 
+// Call Button Hover Functionality
 for (const button of callButtons) {
   button.addEventListener("mouseenter", function () {
     button.children[0].classList.add("fa-beat-fade");
@@ -155,6 +156,7 @@ for (const button of copyNumberBtn) {
   });
 }
 
+// Copy Button Hover Functionality
 for (const button of copyNumberBtn) {
   button.addEventListener("mouseenter", function () {
     button.children[0].classList.add("fa-beat-fade");

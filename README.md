@@ -35,9 +35,9 @@
 ## 2. How do you create and insert a new element into the DOM?
 
 - Steps:
-  1st step: Create a new element with `document.createElement("tag")`
-  2nd step: Add new content with `innerText` or `innerHTML`
-  3rd step: Insert into DOM with `appendChild`
+  - 1st step: Create a new element with `document.createElement("tag")`
+  - 2nd step: Add new content with `innerText` or `innerHTML`
+  - 3rd step: Insert into DOM with `appendChild`
 
 ---
 
